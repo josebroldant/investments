@@ -1,0 +1,35 @@
+<div class="sum-background">
+    <div class="general-info">
+        <img src="/assets/user.png" class="user-image"/>
+        <ul class="lista-summary">
+            <li>Nombre: Juan Miguel Clavijo</li>
+            <li>Categoría: Inversionista Diversificado</li>
+            <li>Nivel de Riesgo: Medio-alto</li>
+        </ul>
+    </div>
+    <span>
+        
+    </span>
+    <div>
+        <title class="titulos">RESUMEN</title>
+    </div>
+    <div class="graficas">
+        <ngx-charts-bar-vertical
+            [view]="view"
+            [scheme]="colorScheme"
+            [results]="single"
+            [gradient]="gradient"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [legend]="showLegend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            (select)="onSelect($event)">
+        </ngx-charts-bar-vertical>
+    </div>
+    <div class="centering">
+        <button class="botones" (click)="detailedInfo()">Información Detallada</button>
+    </div>
+</div>
