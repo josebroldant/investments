@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { single } from './data';
+import { Type } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-summary',
@@ -11,22 +12,24 @@ import { single } from './data';
 })
 export class SummaryComponent implements OnInit {
 
-  //graph
-  //graph
+  //GRAPH
+
+  //data
   single: any[] = [];
   multi: any[] = [];
 
+  //dimensions
   view: any[] = [700, 400];
 
   // options
   showXAxis = true;
   showYAxis = true;
   gradient = false;
-  showLegend = true;
+  showLegend = false;
   showXAxisLabel = true;
-  xAxisLabel = 'Country';
+  xAxisLabel = 'Crypto Currency';
   showYAxisLabel = true;
-  yAxisLabel = 'Population';
+  yAxisLabel = 'Total Mined';
 
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
@@ -40,12 +43,12 @@ export class SummaryComponent implements OnInit {
     console.log(event);
   }
 
-  detailedInfo(){
+  goToDetailedInfo(){
       this.navigateTo("/detailed-sum");
   }
 
   navigateTo(to: string){
-    this.router.navigate([to]);/*this.router.navigate([to, this.usuario])    --->   /terms/usuario   */ 
+    this.router.navigate([to]); 
   }
 
   ngOnInit(): void {

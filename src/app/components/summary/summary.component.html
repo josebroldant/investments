@@ -1,21 +1,24 @@
 <div class="sum-background">
     <div class="general-info">
         <img src="/assets/user.png" class="user-image"/>
+        <title class="main-titulo">CRYPTO INVESTMENTS APP</title>
         <ul class="lista-summary">
-            <li>Nombre: Juan Miguel Clavijo</li>
-            <li>Categoría: Inversionista Diversificado</li>
-            <li>Nivel de Riesgo: Medio-alto</li>
+            <li>Name: Juan Miguel Clavijo</li>
+            <li>Category: Diversified Investor</li>
+            <li>Risk Level: Mid-High</li>
         </ul>
     </div>
     <span>
         
     </span>
     <div>
-        <title class="titulos">RESUMEN</title>
+        <title class="titulos">SUMMARY</title>
     </div>
+    <div></div>
+    <div></div>
     <div class="graficas">
         <ngx-charts-bar-vertical
-            [view]="view"
+            [view]="[500, 400]"
             [scheme]="colorScheme"
             [results]="single"
             [gradient]="gradient"
@@ -30,6 +33,39 @@
         </ngx-charts-bar-vertical>
     </div>
     <div class="centering">
-        <button class="botones" (click)="detailedInfo()">Información Detallada</button>
+        <button class="botones" (click)="goToDetailedInfo()">Detailed Information</button>
     </div>
+    <div>
+        <title class="titulos">YOUR OPPORTUNITIES</title>
+    </div>
+    <table class="tablas">
+      <tr>
+        <th class="table-titles">Currency Type</th>
+        <th class="table-titles">Product Name</th> 
+        <th class="table-titles">Risk</th>
+        <th class="table-titles">% Recomendation</th>
+      </tr>
+      <tr>
+        <td class="table-content">Crypto</td>
+        <td class="table-content">Bitcoin</td>
+        <td class="table-content">Mid</td>
+        <td class="table-content">7%</td>
+      </tr>
+      <tr>
+        <td class="table-content">Crypto</td>
+        <td class="table-content">Ethereum</td>
+        <td class="table-content">High</td>
+        <td class="table-content">3%</td>
+      </tr>
+      <tr>
+        <td class="table-content">Crypto</td>
+        <td class="table-content">Cardano</td>
+        <td class="table-content">High</td>
+        <td class="table-content">4%</td>
+      </tr>
+    </table>  
+    <footer class="footer">
+        <p>Developed by: José Roldán</p>
+        <p>Copyright 2021. All rights reserved</p>
+    </footer>
 </div>

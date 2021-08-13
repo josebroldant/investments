@@ -1,1 +1,120 @@
-<p>xddddd</p>
+<div class="sum-background">
+    <div class="general-info">
+        <img src="/assets/user.png" class="user-image"/>
+        <title class="main-titulo">CRYPTO INVESTMENTS APP</title>
+        <ul class="lista-summary">
+            <li>Name: Juan Miguel Clavijo</li>
+            <li>Category: Diversified Investor</li>
+            <li>Risk Level: Mid-High</li>
+        </ul>
+    </div>
+    <div>
+        <button class="back-button" (click)="goToSummary()">Back to summary</button>
+    </div>
+    <span>
+        
+    </span>
+    <div>
+        <title class="titulos">DETAILED INFORMATION</title>
+    </div>
+    <ngx-charts-pie-chart 
+        [results]="single"
+        [legend]="true"
+        [legendTitle]="'Crypto Currency'" 
+        [view]="[1000,300]"
+        [labels]="true">
+    </ngx-charts-pie-chart>
+    <table class="tablas">
+        <tr>
+            <th class="table-titles">Reliability Type</th>
+            <th class="table-titles">Active type</th> 
+            <th class="table-titles">Risk</th>
+            <th class="table-titles">% In Portfolio</th>
+            <th class="table-titles">% Recomendation</th>
+        </tr>
+        <tr>
+            <td class="table-content">Variable</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">Mid</td>
+            <td class="table-content">24%</td>
+            <td class="table-content">7%</td>
+        </tr>
+        <tr>
+            <td class="table-content">Variable</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">High</td>
+            <td class="table-content">21%</td>
+            <td class="table-content">3%</td>
+        </tr>
+        <tr>
+            <td class="table-content">Variable</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">High</td>
+            <td class="table-content">32%</td>
+            <td class="table-content">4%</td>
+        </tr>
+    </table>
+    <div>
+        <title class="titulos">TIPS FOR YOUR PORTFOLIO</title>
+    </div>
+    <table class="tablas">
+        <tr>
+            <th class="table-titles">Product Name</th>
+            <th class="table-titles">Active type</th> 
+            <th class="table-titles">Risk</th>
+            <th class="table-titles">% Recomendation in Portfolio</th>
+        </tr>
+        <tr>
+            <td class="table-content">Monero</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">Mid</td>
+            <td class="table-content">10%</td>
+        </tr>
+        <tr>
+            <td class="table-content">Litecoin</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">High</td>
+            <td class="table-content">21%</td>
+        </tr>
+        <tr>
+            <td class="table-content">Uniswap</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">Mid-High</td>
+            <td class="table-content">41%</td>
+        </tr>
+        <tr>
+            <td class="table-content">Polkadot</td>
+            <td class="table-content">Crypto</td>
+            <td class="table-content">Mid</td>
+            <td class="table-content">11%</td>
+        </tr>
+    </table>
+    <div class="centering">
+        <button class="botones" (click)="goToWiki()">Products Wiki</button>
+    </div>
+    <div class="two-columns">
+        <div>
+            <title class="titulos">BASED ON YOUR INTERESTS</title>
+            <ul class="list-down">
+                <li>Bitcoin</li>
+                <li>Unergy Center</li>
+                <li>ETF water</li>
+                <li>Clean Energies</li>
+            </ul>
+        </div>
+        <div>
+            <title class="titulos">RECOMMENDATIONS</title>
+            <ul class="list-down">
+                <li>Ethereum</li>
+                <li>Uniswap</li>
+                <li>Litecoin</li>
+                <li>Polkadot</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Developed by: José Roldán</p>
+        <p>Copyright 2021. All rights reserved</p>
+    </footer>
+</div>
+
