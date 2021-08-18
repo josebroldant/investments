@@ -9,6 +9,9 @@ import { WikiComponent } from './components/wiki/wiki.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+import { SumEtfsComponent } from './components/sum-etfs/sum-etfs.component';
+import { DetSumEtfsComponent } from './components/det-sum-etfs/det-sum-etfs.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DetailedSumComponent,
     SummaryComponent,
     WikiComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HomeComponent,
+    SumEtfsComponent,
+    DetSumEtfsComponent
   ],
   imports: [
     BrowserModule,

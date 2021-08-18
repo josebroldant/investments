@@ -139,3 +139,10 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+
+.table-content-trade{
+    border-style: solid;
+    background-color: white;
+    border-color: black;
+    text-decoration: underline;
+}

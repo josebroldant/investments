@@ -22,14 +22,13 @@ export class SummaryComponent implements OnInit {
   view: any[] = [700, 400];
 
   // options
-  showXAxis = true;
-  showYAxis = true;
-  gradient = false;
+  gradient = true;
   showLegend = false;
-  showXAxisLabel = true;
-  xAxisLabel = 'Crypto Currency';
-  showYAxisLabel = true;
-  yAxisLabel = 'Total Mined';
+  showLabels = true;
+
+  customColors = {
+    domain: ['green', 'yellow', 'red', 'black']
+  };
 
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
