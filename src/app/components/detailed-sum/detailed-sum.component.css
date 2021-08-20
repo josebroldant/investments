@@ -146,3 +146,16 @@
     border-color: black;
     text-decoration: underline;
 }
+
+.botones-tabla{
+    background-color:rgb(20, 0, 170);
+    color: white;
+    width: 100px;
+    height: 20px;
+    border:black;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: none;
+}

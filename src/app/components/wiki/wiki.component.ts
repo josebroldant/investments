@@ -10,8 +10,8 @@ export class WikiComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  goToSummary(){
-    this.navigateTo("/summary");
+  goToHome(){
+    this.navigateTo("/home");
   }
 
   navigateTo(to: string){

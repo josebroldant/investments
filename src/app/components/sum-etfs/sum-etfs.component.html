@@ -1,1 +1,110 @@
-<p>sum-etfs works!</p>
+<div class="sum-background">
+    <div class="general-info">
+        <img src="/assets/user.png" class="user-image"/>
+        <title class="main-titulo">INVESTMENTS APP</title>
+        <ul class="lista-summary">
+            <li>Name: Juan Miguel Clavijo</li>
+            <li>Category: Diversified Investor</li>
+            <li>Risk Level: Mid-High</li>
+        </ul>
+    </div>
+    <div>
+      <button class="back-button" (click)="goToHome()">Back to Home</button>
+    </div>
+    <span>
+        
+    </span>
+    <div>
+        <title class="titulos">ETFs SUMMARY</title>
+    </div>
+    <div></div>
+    <div></div>
+    <div class="graficas">
+      <ngx-charts-pie-chart 
+      [results]="single"
+      [legend]="false"
+      [legendTitle]="'Currency'" 
+      [view]="[700,300]"
+      [labels]="true"
+      [scheme]="customColors">
+      </ngx-charts-pie-chart>
+      <table class="tabla-der">
+        <tr>
+          <th class="table-titles">Product</th>
+          <th class="table-titles">Gain</th> 
+          <th class="table-titles">Loss</th>
+          <th class="table-titles">Operation 1</th>
+          <th class="table-titles">Operation 2</th>
+        </tr>
+        <tr>
+          <td class="table-content">C&C trading</td>
+          <td class="table-content-gain">10%</td>
+          <td class="table-content">-</td>
+          <td class="table-content-trade">
+            <a class="botones-tabla" href="https://bloomberg.com">Buy</a>
+          </td>
+          <td class="table-content-trade">
+            <a class="botones-tabla" href="https://bloomberg.com">Sell</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-content">Solar Inc.</td>
+          <td class="table-content-gain">5%</td>
+          <td class="table-content">-</td>
+          <td class="table-content-trade">
+            <a class="botones-tabla" href="https://bloomberg.com">Buy</a>
+          </td>
+          <td class="table-content-trade">
+            <a class="botones-tabla" href="https://bloomberg.com">Sell</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-content">Nets Investments</td>
+          <td class="table-content">-</td>
+          <td class="table-content-loss">2%</td>
+          <td class="table-content-trade">
+            <a class="botones-tabla" href="https://bloomberg.com">Buy</a>
+          </td>
+          <td class="table-content-trade">
+            <a class="botones-tabla" href="https://bloomberg.com">Sell</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="centering">
+        <button class="botones" (click)="goToDetEtfsSum()">Detailed Information</button>
+    </div>
+    <div>
+        <title class="titulos">YOUR PRODUCTS</title>
+    </div>
+    <table class="tablas">
+      <tr>
+        <th class="table-titles">Product Type</th>
+        <th class="table-titles">Product Name</th> 
+        <th class="table-titles">Risk</th>
+        <th class="table-titles">% Recomendation</th>
+      </tr>
+      <tr>
+        <td class="table-content">ETF</td>
+        <td class="table-content">C&C trading</td>
+        <td class="table-content">High</td>
+        <td class="table-content">2%</td>
+      </tr>
+      <tr>
+        <td class="table-content">ETF</td>
+        <td class="table-content">Solar Inc.</td>
+        <td class="table-content">Mid</td>
+        <td class="table-content">10%</td>
+      </tr>
+      <tr>
+        <td class="table-content">ETF</td>
+        <td class="table-content">Nets Investments</td>
+        <td class="table-content">Low</td>
+        <td class="table-content">12%</td>
+      </tr>
+    </table>  
+    <footer class="footer">
+        <p>Developed by: José Roldán</p>
+        <p>Copyright 2021. All rights reserved</p>
+    </footer>
+</div>

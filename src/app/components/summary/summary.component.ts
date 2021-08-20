@@ -42,12 +42,16 @@ export class SummaryComponent implements OnInit {
     console.log(event);
   }
 
-  goToDetailedInfo(){
-      this.navigateTo("/detailed-sum");
-  }
-
   navigateTo(to: string){
     this.router.navigate([to]); 
+  }
+
+  goToHome(){
+    this.navigateTo("/home");
+  }
+
+  goToDetailedInfo(){
+    this.navigateTo("/detailed-sum");
   }
 
   ngOnInit(): void {
