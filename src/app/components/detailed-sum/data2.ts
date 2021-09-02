@@ -1,15 +1,15 @@
 export var single = [
     {
       "name": "Bitcoin",
-      "value": 100
+      "value": 2800000
     },
     {
       "name": "Ethereum",
-      "value": 50
+      "value": 1000000
     },
     {
       "name": "Cardano",
-      "value": 60
+      "value": 480000
     }
   ];
   

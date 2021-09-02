@@ -1,16 +1,16 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { single } from './data';
+import { single } from './data3';
 import { Type } from '@angular/compiler/src/core';
 
 @Component({
-  selector: 'app-summary',
-  templateUrl: './summary.component.html',
-  styleUrls: ['./summary.component.css']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
 })
-export class SummaryComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
   //GRAPH
 
@@ -22,17 +22,12 @@ export class SummaryComponent implements OnInit {
   view: any[] = [700, 400];
 
   // options
-  gradient = false;
+  gradient = true;
   showLegend = false;
-  showXAxis = true;
-  showYAxis = true;
-  showXAxisLabel = true;
-  xAxisLabel = 'Currency';
-  showYAxisLabel = true;
-  yAxisLabel = 'Total Mined';
+  showLabels = true;
 
   customColors = {
-    domain: ['green', 'yellow', 'red', 'black']
+    domain: ['blue', 'cyan', 'grey', 'black']
   };
 
   colorScheme = {
@@ -53,10 +48,6 @@ export class SummaryComponent implements OnInit {
 
   goToHome(){
     this.navigateTo("/home");
-  }
-
-  goToDetailedInfo(){
-    this.navigateTo("/detailed-sum");
   }
 
   ngOnInit(): void {

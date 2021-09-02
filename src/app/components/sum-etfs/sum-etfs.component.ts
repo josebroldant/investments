@@ -22,9 +22,14 @@ export class SumEtfsComponent implements OnInit {
   view: any[] = [700, 400];
 
   // options
-  gradient = true;
+  gradient = false;
   showLegend = false;
-  showLabels = true;
+  showXAxis = true;
+  showYAxis = true;
+  showXAxisLabel = true;
+  xAxisLabel = 'Company';
+  showYAxisLabel = true;
+  yAxisLabel = 'Revenue';
 
   customColors = {
     domain: ['green', 'green', 'red', 'black']

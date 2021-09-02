@@ -20,14 +20,20 @@
     <div></div>
     <div></div>
     <div class="graficas">
-      <ngx-charts-pie-chart 
-      [results]="single"
-      [legend]="false"
-      [legendTitle]="'Currency'" 
-      [view]="[700,300]"
-      [labels]="true"
-      [scheme]="customColors">
-      </ngx-charts-pie-chart>
+      <ngx-charts-bar-vertical
+        [view]="[700, 400]"
+        [scheme]="customColors"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        (select)="onSelect($event)">
+      </ngx-charts-bar-vertical>
       <table class="tabla-der">
         <tr>
           <th class="table-titles">Product</th>
@@ -35,6 +41,8 @@
           <th class="table-titles">Loss</th>
           <th class="table-titles">Operation 1</th>
           <th class="table-titles">Operation 2</th>
+          <th class="table-titles">Money invested</th>
+          <th class="table-titles">Current money</th>
         </tr>
         <tr>
           <td class="table-content">C&C trading</td>
@@ -46,6 +54,8 @@
           <td class="table-content-trade">
             <a class="botones-tabla" href="https://bloomberg.com">Sell</a>
           </td>
+          <td class="table-content">5.000.000</td>
+          <td class="table-content">5.500.000</td>
         </tr>
         <tr>
           <td class="table-content">Solar Inc.</td>
@@ -57,6 +67,8 @@
           <td class="table-content-trade">
             <a class="botones-tabla" href="https://bloomberg.com">Sell</a>
           </td>
+          <td class="table-content">2.000.000</td>
+          <td class="table-content">2.100.000</td>
         </tr>
         <tr>
           <td class="table-content">Nets Investments</td>
@@ -68,6 +80,8 @@
           <td class="table-content-trade">
             <a class="botones-tabla" href="https://bloomberg.com">Sell</a>
           </td>
+          <td class="table-content">3.500.000</td>
+          <td class="table-content">3.430.000</td>
         </tr>
       </table>
     </div>

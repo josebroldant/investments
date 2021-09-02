@@ -1,15 +1,15 @@
 export var single = [
     {
       "name": "C&C trading",
-      "value": 800
+      "value": 5500000
     },
     {
       "name": "Solar Inc.",
-      "value": 500
+      "value": 2100000
     },
     {
       "name": "Nets Investments",
-      "value": 1400
+      "value": 3430000
     }
   ];
   

@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { SumEtfsComponent } from './components/sum-etfs/sum-etfs.component';
 import { DetSumEtfsComponent } from './components/det-sum-etfs/det-sum-etfs.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { DetProjComponent } from './components/det-proj/det-proj.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DetSumEtfsComponent } from './components/det-sum-etfs/det-sum-etfs.comp
     NotfoundComponent,
     HomeComponent,
     SumEtfsComponent,
-    DetSumEtfsComponent
+    DetSumEtfsComponent,
+    ProjectsComponent,
+    DetProjComponent
   ],
   imports: [
     BrowserModule,
