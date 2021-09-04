@@ -50,6 +50,10 @@ export class ProjectsComponent implements OnInit {
     this.navigateTo("/home");
   }
 
+  goToDetProj(){
+    this.navigateTo("/det-proj");
+  }
+
   ngOnInit(): void {
   }
 
